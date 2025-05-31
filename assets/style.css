@@ -1,0 +1,213 @@
+/* General reset and smooth font */
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #101010;
+    color: #f8f8f2;
+    letter-spacing: 0.01em;
+}
+
+/* Neon Buttons */
+button, .btn, .dbc-btn {
+    border-radius: 12px !important;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    background: linear-gradient(90deg, #101c2c 60%, #0ff2 100%);
+    color: #00e0ff !important;
+    border: 2px solid #00e0ff !important;
+    box-shadow: 0 0 8px #00e0ff88, 0 2px 12px #00e0ff22;
+    transition: 
+        background 0.2s, 
+        color 0.2s, 
+        box-shadow 0.2s, 
+        border 0.2s;
+}
+select, .form-select, .dbc-select {
+    background: #181818 !important;
+    color: #00e0ff !important;
+    border: 2px solid #00e0ff !important;
+    border-radius: 10px !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    box-shadow: 0 0 8px #00e0ff22;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+select:focus, .form-select:focus, .dbc-select:focus {
+    border: 2px solid #00ffd0 !important;
+    box-shadow: 0 0 0 4px #00ffd044;
+    outline: none !important;
+    background: linear-gradient(135deg, #181818 60%, #1a3a4a 100%);
+    color: #00ffd0 !important;
+}
+
+#captcha-inpt, .dbc-input, .form-control {
+    background: #181818 !important;
+    color: #00e0ff !important;
+    border: 0px solid #00e0ff !important;
+    border-radius: 10px !important;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    box-shadow: 0 0 8px #00e0ff22;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    display: inline-block;
+    text-shadow: 1px 1px 2px #000, 0 0 6px #00e0ff88;
+    margin: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#captcha-inpt{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-right: 0px;
+}
+#captcha-code{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-left: 0px !important;
+}
+#captcha-inpt:focus, .dbc-input:focus, .form-control:focus {
+    border: 2px solid #00ffd0 !important;
+    box-shadow: 0 0 0 4px #00ffd044;
+    outline: none !important;
+    background: linear-gradient(135deg, #181818 60%, #1a3a4a 100%);
+    color: #00ffd0 !important;
+}
+
+#captcha-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    background: repeating-linear-gradient(
+        120deg, #232323, #232323 10px, #00e0ff22 12px, #232323 20px
+    );
+    color: #00e0ff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #00e0ff44;
+    padding: 8px 0;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover, .btn:hover, .dbc-btn:hover {
+    background: linear-gradient(90deg, #101c2c 40%, #00ffd0 100%);
+    color: #ffffff !important;
+    border: 2px solid #00ffd0 !important;
+    box-shadow: 0 0 16px #00ffd0cc, 0 2px 16px #00ffd044;
+}
+
+button:focus, .btn:focus, .dbc-btn:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px #00e0ff99, 0 0 16px #00e0ffcc;
+}
+
+/* Neon InputGroupText (labels) */
+.input-group-text, .dbc-input-group-text {
+    background: linear-gradient(90deg, #232323 70%, #00e0ff22 100%) !important;
+    color: #00e0ff !important;
+    border: none !important;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    text-shadow: 0 0 4px #00e0ff88;
+    box-shadow: 0 0 8px #00e0ff22;
+    border-radius: 10px !important;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Optional: Neon focus for selects and inputs */
+select:focus, .form-select:focus, input:focus, .form-control:focus {
+    border: 1.5px solid #00e0ff !important;
+    box-shadow: 0 0 8px #00e0ff88;
+    outline: none !important;
+}
+
+/* Optional: Neon effect for sliders */
+.rc-slider-handle {
+    border: 2px solid #00e0ff !important;
+    background: #101c2c !important;
+    box-shadow: 0 0 8px #00e0ff88, 0 0 2px #00e0ff44;
+}
+.rc-slider-handle:active {
+    border: 2px solid #00ffd0 !important;
+    box-shadow: 0 0 16px #00ffd0cc, 0 0 4px #00ffd044;
+}
+
+/* Optional: Neon glow for textarea focus */
+#main-textarea:focus {
+    border: 1.5px solid #00e0ff;
+    box-shadow: 0 0 0 3px #00e0ff99, 0 4px 24px rgba(0,0,0,0.18);
+    background: linear-gradient(135deg, #181818 60%, #1a3a4a 100%);
+}
+
+/* Sliders (for daq and dcc) */
+.dash-slider, .daq-slider, .rc-slider {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.rc-slider-track, .rc-slider-rail {
+    height: 4px !important;
+    border-radius: 2px;
+}
+
+.rc-slider-handle {
+    border: 2px solid #00e0ff !important;
+    background: #101c2c !important;
+    width: 18px !important;
+    height: 18px !important;
+    margin-top: -7px !important;
+    box-shadow: 0 0 0 2px #00e0ff44;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.rc-slider-handle:active {
+    border: 2px solid #00ffd0 !important;
+    box-shadow: 0 0 0 4px #00ffd044;
+}
+
+/* Remove border-radius and shadow from everything else unless specified */
+* {
+    border-radius: 0;
+    box-shadow: none;
+}
+/* Neon, modern, AI-inspired textarea */
+#main-textarea {
+    background: #101010;
+    color: #00e0ff;
+    min-height: 135px;
+    max-height: 510px;
+    resize: vertical;
+    width: 100%;
+    height: auto;
+    border: 2px solid #00e0ff;
+    border-radius: 14px;
+    box-shadow: 0 0 12px #00e0ff44, 0 2px 8px #00e0ff22;
+    padding: 18px;
+    font-size: 1.15rem;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none;
+    letter-spacing: 0.03em;
+    caret-color: #00ffd0;
+    text-shadow: 0 0 4px #00e0ff55;
+}
+
+#main-textarea::placeholder {
+    color: #00e0ff99;
+    opacity: 1;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+#main-textarea:focus {
+    border: 2px solid #00ffd0;
+    box-shadow: 0 0 0 4px #00ffd044, 0 4px 24px #00ffd022;
+    background: linear-gradient(135deg, #101010 60%, #1a3a4a 100%);
+    color: #00ffd0;
+}
